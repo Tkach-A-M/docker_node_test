@@ -1,6 +1,8 @@
 FROM node
 
 WORKDIR /app
+#чтобы лишний раз не собирать образ
+COPY package.json /app
 
 COPY . .
 
